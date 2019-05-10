@@ -1,10 +1,10 @@
 ---
-title: Text as Data
+title: Introduction
 nav: true
 layout: default
 --- 
 
-# Text as Data
+# Intro to Text as Data
 - Bag of words
 - Digital text is massively addressable at different levels of scale (Michael Witmore, "Text: A Massively Addressable Object")
 
