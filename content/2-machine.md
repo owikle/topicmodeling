@@ -14,7 +14,8 @@ nav: true
 ## Topic Modeling
 - Topic modeling as a heuristic, not as evidence
 - An example of `unsupervised machine learning`
-- Visualizing your topic modeling
+- Visualizing your topic model
+    - 
 
 ## Exploring big data
 - Google Books [Ngram Viewer](https://books.google.com/ngrams)
