@@ -7,7 +7,7 @@ nav: true
 
 Utilizing text as data requires breaking down a text into smaller units of analysis. Doing so can allow us to see patterns and approach text from different points of entry.
 
-Usually, these smaller units of analysis are words. Much of the time spent doing text analysis research is spent preparing text so that those smaller units of analyses can be accessed by the digital tools we use.
+In text analysis, units of analysis tend to be texts (broken up as discrete books, documents, poems, etc.), and words. Much of the time spent doing text analysis research is spent preparing text so that these smaller units of analyses can be accessed by the digital tools we use.
 
 ## Selecting and getting to know a corpus
 
@@ -75,6 +75,8 @@ OCR identifies printed or handwritten text characters in digital images of physi
 3. **Layout detection and segmentation** (identify organization and lines of text to pass to OCR)
 4. **OCR** (feature extraction)
 5. **Save results as plain text** (.txt files)
+
+(adapted from Evan Williamson's [OCR: Workflows and Data](https://osf.io/gd5ka/){:target='_blank'})
 {% endcapture %}
 {% include card.md text=text header="Traditional OCR Workflow" %}
 
