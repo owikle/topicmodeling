@@ -38,6 +38,8 @@ Usually, these smaller units of analysis are words. Much of the time spent doing
 
 ## Defining Units of Analysis
 
+{% include figure.html img="letters.jpg" alt="rich text" width="75%" %}
+
 Usually when people analyze text, they are interested in words (i.e. word frequency, order, meaning). Therefore, a primary part of preparing your text for research is making sure the words in your corpus are identifiable units of measurement. You may start your project with scanned images of book pages. What format do you need to transform this text to, and how will you accomplish that transformation?
 
 Below you'll find definitions and examples of [plain text](#plain), [OCR](#ocr), and [text cleaning](#clean)
@@ -110,7 +112,7 @@ Or maybe your book came with a large amount of front matter that you'd like to g
 Find and replace might help with some of these problems, but for others you need a stronger tool. In this case, a lot of people will use Regular Expressions. Regular Expressions are sequences of symbols and characters expressing a string to be searched for within a text. They can get very complicated and are not very intuitive, so we won't spend too much time with them now, but we'll apply a few here just to get a taste. 
 
 {% capture text %}
-**Activity: Try Out Regular Expressions**
+**Activity: Clean Your Text With Regular Expressions**
 1. Open walden.txt in Visual Studio Code (if you've misplaced it you can also download it here: <a href="../data/walden.txt">walden.txt</a>)
 2. Click on `Edit > Find` (`cmd + F` on mac or `ctl + F` on pc) to open a search box, which should appear in the top right-hand corner of your window in Visual Studio Code
 3.  On the right side of the search box, you'll see a button with this symbol: `.*`. If you hover over this button, the phrase `Use Regular Expression` appears. Click on this button
