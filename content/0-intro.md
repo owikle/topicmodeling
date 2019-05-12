@@ -97,7 +97,7 @@ ABBYY FineReader
 
 ### <a name="clean">Text Cleaning</a>
 
-After you've OCRd your text and transferred it to plain text format, you will likely discover errors in your new text file(s). OCR is not perfect. Especially if you are using older texts, you might encounter problems like your s's looking like f's:
+After you've OCRd your text and transferred it to plain text format, you will likely discover errors in your new text file(s). OCR is not perfect. Especially if you are using older texts, you might encounter problems such as your s's looking like f's:
 
 {% include figure.html img="italian.jpg" alt="italian" caption="The Italian, Ann Radcliffe (1797)" width="75%" %}
 
