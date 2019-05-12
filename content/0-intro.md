@@ -110,12 +110,22 @@ Or maybe your book came with a large amount of front matter that you'd like to g
 Find and replace might help with some of these problems, but for others you need a stronger tool. In this case, a lot of people will use Regular Expressions. Regular Expressions are sequences of symbols and characters expressing a string to be searched for within a text. They can get very complicated and are not very intuitive, so we won't spend too much time with them now, but we'll apply a few here just to get a taste. 
 
 {% capture text %}
-**Activity: Try out Regular Expressions**
+**Activity: Try Out Regular Expressions**
 1. Open walden.txt in Visual Studio Code (if you've misplaced it you can also download it here: <a href="../data/walden.txt">walden.txt</a>)
-2. Click on `Edit > Find` (`cmd - F` on mac or `ctl - F` on pc) to open a search box, which should appear in the top right-hand corner of your window in Visual Studio Code
+2. Click on `Edit > Find` (`cmd + F` on mac or `ctl + F` on pc) to open a search box, which should appear in the top right-hand corner of your window in Visual Studio Code
+
+{% include figure.html img="regex1.jpg" alt="vs code search" caption="Search Box in VS Code" width="100%" %}
+
 3.  On the right side of the search box, you'll see a button with this symbol: `.*`. If you hover over this button, the phrase `Use Regular Expression` appears. Click on this button
-Let's remove/change:
-In the search box, type:
+4. Let's remove hyphenated words at line breaks:
+    - In the search box, type: `-\s+[\r\n]`   
+    - `-` finds the hyphen, `\s+` finds one or more whitespace characters, `[\r\n]` replaces these characters and gets rid of the line break 
+    - Toggle the arrow to the left of the search box. To the right of the box that says `Replace`, you'll see two buttons. One lets you replace one instance at a time, the other lets you replace all at once
+
+{% include figure.html img="regex2.jpg" alt="regex remove hyphens" caption="Use regular expressions to remove hyphenated words" width="100%" %}
+
+5. Let's remove the page numbers and page titles:
+    - In the search box, type: 
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
