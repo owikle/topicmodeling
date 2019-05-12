@@ -113,19 +113,29 @@ Find and replace might help with some of these problems, but for others you need
 **Activity: Try Out Regular Expressions**
 1. Open walden.txt in Visual Studio Code (if you've misplaced it you can also download it here: <a href="../data/walden.txt">walden.txt</a>)
 2. Click on `Edit > Find` (`cmd + F` on mac or `ctl + F` on pc) to open a search box, which should appear in the top right-hand corner of your window in Visual Studio Code
+3.  On the right side of the search box, you'll see a button with this symbol: `.*`. If you hover over this button, the phrase `Use Regular Expression` appears. Click on this button
 
 {% include figure.html img="regex1.jpg" alt="vs code search" caption="Search Box in VS Code" width="100%" %}
 
-3.  On the right side of the search box, you'll see a button with this symbol: `.*`. If you hover over this button, the phrase `Use Regular Expression` appears. Click on this button
-4. Let's remove hyphenated words at line breaks:
-    - In the search box, type: `-\s+[\r\n]`   
+**Remove sets of page titles and page numbers:**
+1. In the search box, type: `^[A-Z]+\.\s\d+`
+    - `^` starts at the beginning of a line, `[A-Z]+` finds one or more letter characters, `\.` finds a period, `\s` finds a space, `\d+` finds one or more digits (numbers)
+2. Toggle the arrow to the left of the search box. To the right of the box that says `Replace`, you'll see two buttons. One lets you replace one instance at a time, the other lets you replace all instances at once
+3. To get rid of page titles with two words, add a space and another set of letter characters (`\s[A-Z]+`): `^[A-Z]+\s[A-Z]+\.\s\d+`
+4. To get rid of page titles with three words, add two instances of `\s[A-Z]+`: `^[A-Z]+\s[A-Z]+\s[A-Z]+\.\s\d+`
+5. Flip these parts around to get rid of instances where page titles come after page numbers: `^\d+\s[A-Z]+\.`
+
+{% include figure.html img="regex3.jpg" alt="regex remove page titles" caption="Use regular expressions to remove redundant page titles and numbers" width="100%" %}
+
+**Remove hyphenated words at line breaks:**
+1. In the search box, type: `-\s+[\r\n]`   
     - `-` finds the hyphen, `\s+` finds one or more whitespace characters, `[\r\n]` replaces these characters and gets rid of the line break 
-    - Toggle the arrow to the left of the search box. To the right of the box that says `Replace`, you'll see two buttons. One lets you replace one instance at a time, the other lets you replace all at once
+2. Replace all instances
 
 {% include figure.html img="regex2.jpg" alt="regex remove hyphens" caption="Use regular expressions to remove hyphenated words" width="100%" %}
 
-5. Let's remove the page numbers and page titles:
-    - In the search box, type: 
+The text still isn't 100% clean, but we've managed to take out most of the page titles and consolidate hyphenated words, so our future analysis won't be skewed.
+
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
