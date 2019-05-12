@@ -5,10 +5,9 @@ nav: true
 
 # Intro to Text as Data
 
-Utilizing text as data requires breaking down a text into smaller units of analysis. Doing so can allow us to see patterns and approach text from different points of entry that may not otherwise exist 
-(examples)
+Utilizing text as data requires breaking down a text into smaller units of analysis. Doing so can allow us to see patterns and approach text from different points of entry.
 
-If we are looking at books, those smaller units of analysis are usually words. Though many analyses that we run on text tend to be accomplished fairly quickly, the bulk of time doing this type of research is spent on preparing text so that those smaller units of analyses can be accessed by the digital tools we use.
+Usually, these smaller units of analysis are words. Much of the time spent doing text analysis research is spent preparing text so that those smaller units of analyses can be accessed by the digital tools we use.
 
 ## Selecting and getting to know a corpus
 
@@ -24,6 +23,11 @@ If we are looking at books, those smaller units of analysis are usually words. T
 
 {% capture text %}
 **Activity: Find a Text**
+1. Go to [https://archive.org/details/waldenorlifeinwo1854thor/page/n3](https://archive.org/details/waldenorlifeinwo1854thor/page/n3){:target='_blank'}, the record for an 1854 edition of Henry David Thoreau's Walden on [Archive.org](https://archive.org/)
+2. Take a look at the download options on the right side of the page. Click on `Full Text`
+3. This will take you to a page containing all of the book's text. You'll need to select all of this text, copy it, and paste it into a new file in your text editor. If you copied over some extra material from the webpage (not actually included in the book), you may also need to delete this from the top of your text file (from `Skip to main content` down to `See other formats`)
+4. Save this file as walden.txt
+5. Take a moment to refer back to the digitized pages of the book. How is their layout and content represented in the text file you just created?
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
@@ -41,6 +45,10 @@ Below you'll find definitions and examples of [plain text](#plain), [OCR](#ocr),
 ### <a name="plain">Plain Text</a>
 
 Plain text is basically just what it describes, a file format that saves within it the bare minimum amount of information presented to it. Whereas a Microsoft Word document file will save within it a variety of information about the font, layout, and properties of the document prepared, a plain text file will save just the text. Text analysis usually operates on plain text files because the format is conducive to the computer's ability to identify characters and words.
+
+{% include figure.html img="word.jpg" alt="rich text" caption="Rich Text in Microsoft Word" width="75%" %}
+
+{% include figure.html img="txt.jpg" alt="plain text" caption="Plain Text in a Text Editor" width="75%" %}
 
 The following exercise will demonstrate the differences between plain text (what you see in your text editor) and rich text (what you see in Microsoft Word). This is adapted from a tweet by [Alex Gil](https://twitter.com/elotroalex?lang=en) and Devin Becker's [Text Analysis for Writers Workshop](https://dcnb.github.io/text-analysis-for-writers/). 
 
@@ -103,9 +111,9 @@ Find and replace might help with some of these problems, but for others you need
 
 {% capture text %}
 **Activity: Try out Regular Expressions**
-Open the text you found earlier in Visual Studio Code.
-Click on Edit - Find (or cmd - F) to open a search box, which should appear in the top right hand part of your window.
-On the right side of the search box, you'll see a symbol of a period star (.*). If you hover over this button, the phrase "Use Regular Expression" appears. Click on this button.
+1. Open walden.txt in Visual Studio Code (if you've misplaced it you can also download it here: <a href="../data/walden.txt">walden.txt</a>)
+2. Click on `Edit > Find` (`cmd - F` on mac or `ctl - F` on pc) to open a search box, which should appear in the top right-hand corner of your window in Visual Studio Code
+3.  On the right side of the search box, you'll see a button with this symbol: `.*`. If you hover over this button, the phrase `Use Regular Expression` appears. Click on this button
 Let's remove/change:
 In the search box, type:
 {% endcapture %}
