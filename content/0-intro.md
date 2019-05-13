@@ -116,8 +116,9 @@ Find and replace might help with some of these problems, but for others you need
 {% capture text %}
 **Activity: Clean Your Text With Regular Expressions**
 1. Open walden.txt in Visual Studio Code (if you've misplaced it you can also download it here: <a href="../data/walden.txt">walden.txt</a>)
-2. Click on `Edit > Find` (`cmd + F` on mac or `ctl + F` on pc) to open a search box, which should appear in the top right-hand corner of your window in Visual Studio Code
-3.  On the right side of the search box, you'll see a button with this symbol: `.*`. If you hover over this button, the phrase `Use Regular Expression` appears. Click on this button
+2. Delete the front matter
+3. Click on `Edit > Find` (`cmd + F` on mac or `ctl + F` on pc) to open a search box, which should appear in the top right-hand corner of your window in Visual Studio Code
+4.  On the right side of the search box, you'll see a button with this symbol: `.*`. If you hover over this button, the phrase `Use Regular Expression` appears. Click on this button
 
 {% include figure.html img="regex1.jpg" alt="vs code search" caption="Search Box in VS Code" width="100%" %}
 
