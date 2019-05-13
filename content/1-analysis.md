@@ -72,9 +72,22 @@ Voyant Tools is intended as a tool for exploration and to assist with interpreta
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
-**Stop Word List**
+**Stopword List**
 
-A stop word is a word (usually a commonly-used word) that an application has been programmed to ignore. Usually, stop word lists contain common words such as a, an, the, and, etc. Stop word lists are customizable, allowing the researcher to remove words such as character or place names from the analysis. Voyant automatically analyzes your text using a stop word list, but you can delete or edit this list as you see fit.
+A stopword is a word (usually a commonly-used word) that an application has been programmed to ignore. Usually, stopword lists contain common words such as a, an, the, and, to, from, etc. Stopword lists are customizable, allowing the researcher to remove words such as character or place names from the analysis. Voyant automatically analyzes your text using a stop word list, but you can delete or edit this list as you see fit.
+
+Compare the following two screenshots. The first uses Voyant's *Auto-detect* stopword setting. In this case, it has recognized this text as English, so it is using a standard English stopword list. The second uses Voyant's *None* stopword setting.
+
+{% include figure.html img="walden-stoplist.jpg" alt="walden with stoplist" caption="Voyant's Cirrus visualization of Walden with an English stopword list" width="75%" %}
+
+{% include figure.html img="walden-nostoplist.jpg" alt="walden without stoplist" caption="Voyant's Cirrus visualization of Walden without a stopword list" width="75%" %}
+
+If you have your own stopword list, you can upload this instead. Or you can simply add words to Voyant's ready-made lists. To add or edit stopwords, click on the `options` icon in the top right of the visualization. This will produce a dialog box where you can select a list or edit it. 
+
+<div class="text-center">{% include figure.html img="voyant-options.jpg" alt="voyant options tab" caption="Click on the 'options' tab (upper right)" width="75%" %}</div>
+
+{% include figure.html img="stoplist.jpg" alt="voyant stoplist dropdown" caption="Voyant's stoplist options" width="75%" %}
+
 
 {% capture text %}
 **Activity: Voyant Stop Words**
