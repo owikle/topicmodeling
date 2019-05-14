@@ -74,7 +74,7 @@ Voyant Tools is intended as a tool for exploration and to assist with interpreta
 
 **Stopword List**
 
-A stopword is a word (usually a commonly-used word) that an application has been programmed to ignore. Usually, stopword lists contain common words such as a, an, the, and, to, from, etc. Stopword lists are customizable, allowing the researcher to remove words such as character or place names from the analysis. Voyant automatically analyzes your text using a stop word list, but you can delete or edit this list as you see fit.
+A stopword is a word (usually a commonly-used word) that an application has been programmed to ignore. Usually, stopword lists contain common words such as a, an, the, and, to, from, etc. Sometimes, it can be useful to add common words like person names or place names, depending on what your research question is. Stopword lists are customizable, allowing the researcher to remove words such as character or place names from the analysis. Voyant automatically analyzes your text using a stop word list, but you can delete or edit this list as you see fit.
 
 Compare the following two screenshots. The first uses Voyant's *Auto-detect* stopword setting. In this case, it has recognized this text as English, so it is using a standard English stopword list. The second uses Voyant's *None* stopword setting.
 
@@ -88,21 +88,23 @@ If you have your own stopword list, you can upload this instead. Or you can simp
 
 {% include figure.html img="stoplist.jpg" alt="voyant stoplist dropdown" caption="Voyant's stoplist options" width="75%" %}
 
-
 {% capture text %}
 **Activity: Voyant Stop Words**
-
+- Change the stopword settings for the *Walden* text. A simple google search yields a lot of additional stopword list options, if you want to upload a completely new list. You can also edit the existing list.
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
 ### Word Concordance
-- Looking at the context of your words
+
+Word counts give us some information about a text, but often we need more context to make sense of how those words are being used. The "Contexts" tools shows each occurrence of a word with its surrounding text. The tool lets you choose from the text's most frequent words, or you can type a word of your choice into the search box in the lower left-hand corner of the panel. Move the "context" slider next to the search box to view more words before and after your search term.
+
+{% include figure.html img="contexts.jpg" alt="voyant-contexts" caption="A search for the contexts of 'heard' in Walden" width="75%" %}
+
+To see how many times words appear in close proximity to each other, you can also view the "Links" feature in the top left-hand panel of the homepage (the same panel where you see "Cirrus"). 
 
 ### Other Voyant Tools
 
-**Some tips for uploading your texts**
-
-We won't experiment for now with more advanced options for Corpus creation, but there are several [options](https://voyant-tools.org/docs/#!/guide/corpuscreator-section-options) available to tweak the processing of text, XML, and even spreadsheets. 
+Voyant has a robust [documentation](http://docs.voyant-tools.org/tools/){:target='_blank'}. In it, you'll find a lot of tools listed that don't appear on the landing page. You can access these tools by hovering your cursor over the upper right-hand corner of each panel.
 
 **Tool Interactions**
 
@@ -117,7 +119,13 @@ An essential part of Voyant is that events in one tool can cause changes in othe
 
 {% capture text %}
 **Exploration Time**
-Using a text corpus of your choice, or the Austen or Shakespeare corpuses that Voyant provides, spend some time exploring various Voyant tools:
+
+Let's explore a larger set of texts. Using a text corpus of your choice, spend some time exploring various Voyant tools. 
+
+Sample Corpuses:
+- Your own writing
+- The Austen or Shakespeare corpuses that Voyant provides
+- This [corpus](https://www.dropbox.com/s/f7z1i8hg9pzg9wk/American.zip?dl=0){:target='_blank'} of American literature (here's a list of the [titles](https://www.dropbox.com/s/4sug61lqvfw3673/American.xlsx?dl=0)){:target='_blank'} (Curated by [Miriam Posner](https://github.com/miriamposner/voyant-workshop/blob/master/investigating-texts-with-voyant.md))
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
@@ -125,6 +133,7 @@ Using a text corpus of your choice, or the Austen or Shakespeare corpuses that V
 **Reflection Time** 
 - What insights, if any, do these tools provide?
 - Are there patterns or in/consistencies?
+    - Do you trust these patterns? Could you verify their accuracy somehow?
 - How might your 'read' groups of words?
 - What keywords or patterns did you pursue and why?
 - What are the values/limitations of 'not reading' this way?
@@ -132,5 +141,15 @@ Using a text corpus of your choice, or the Austen or Shakespeare corpuses that V
 {% include alert.md text=text color=secondary %}
 
 ### Word Tree
-- Visualizing context with [WordTree](https://www.jasondavies.com/wordtree/)
+
+Want to compare similarities between your words' contexts? Visualizing your text using a word tree can help with this. A word tree is a visual search tool for text that groups the various patterns that exist in the text that comes after your chosen word or phrase. The contexts are arranged in a tree-like branching structure to reveal recurrent themes and phrases. The results can be at times unsurprising and at other times revealing, leading to further research. 
+
+{% capture text %}
+**Word Tree Activity: Give it a try using [WordTree](https://www.jasondavies.com/wordtree/)** 
+{% endcapture %}
+{% include alert.md text=text color=secondary %}
+
+# Additional Resources
+
+- [Antconc](https://www.laurenceanthony.net/software/antconc/): an open-source tool for word concordance and text analysis. This software is an easy download with robust documentation and more reliable performance than Voyant.
 
