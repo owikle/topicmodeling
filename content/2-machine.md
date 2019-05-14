@@ -14,9 +14,15 @@ nav: true
 ## Topic Modeling
 - Topic modeling as a heuristic, not as evidence
 - An example of `unsupervised machine learning`
+- Jockers [LDA Buffet](http://www.matthewjockers.net/2011/09/29/the-lda-buffet-is-now-open-or-latent-dirichlet-allocation-for-english-majors/)
 - Visualizing your topic model
 - [Old Bailey Online](https://www.oldbaileyonline.org/){:target='_blank'}
 - [Mining the Dispatch](http://dsl.richmond.edu/dispatch/pages/intro){:target='_blank'}
+{% capture text %}
+**Topic Modeling Activity** 
+[jsLDA](https://mimno.infosci.cornell.edu/jsLDA/): topic modeling in-browser
+{% endcapture %}
+{% include alert.md text=text color=secondary %}
 
 ## Exploring big data
 - Google Books [Ngram Viewer](https://books.google.com/ngrams)

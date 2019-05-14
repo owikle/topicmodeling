@@ -9,6 +9,7 @@ nav: true
 
 Why digital text analysis?
 - For exploration, hypothesis generation
+    - Playing around with text (even if you don't know what you're doing) can be an effective way to gain a new perspective on the texts you study
 - To expand the audience for under-recognized texts
 
 Tools you know about/are using to analyze and visualize text?
@@ -143,6 +144,8 @@ Sample Corpuses:
 ### Word Tree
 
 Want to compare similarities between your words' contexts? Visualizing your text using a word tree can help with this. A word tree is a visual search tool for text that groups the various patterns that exist in the text that comes after your chosen word or phrase. The contexts are arranged in a tree-like branching structure to reveal recurrent themes and phrases. The results can be at times unsurprising and at other times revealing, leading to further research. 
+
+{% include figure.html img="wordtree.jpg" alt="wordtree visualization" caption="Word Tree visualization of Bob Dylan's 'Blowin' in the Wind'" width="75%" %}
 
 {% capture text %}
 **Word Tree Activity: Give it a try using [WordTree](https://www.jasondavies.com/wordtree/)** 
