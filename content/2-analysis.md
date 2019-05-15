@@ -5,14 +5,14 @@ nav: true
 
 # Text Analysis
 
-## The Why:
-
-Why digital text analysis?
+{% capture text %}
 - For exploration, hypothesis generation
     - Playing around with text (even if you don't know what you're doing) can be an effective way to gain a new perspective on the texts you study
 - To expand the audience for under-recognized texts
+{% endcapture %}
+{% include card.md text=text header="Why digital text analysis?" %}
 
-Tools you know about/are using to analyze and visualize text?
+<!--Tools you know about/are using to analyze and visualize text?
 
 Franco Moretti (Distant Reading - how to expand worldview of world literature)
 - Analyzing 30,000 British novels. Reading 'more' can't be the answer 
@@ -20,12 +20,12 @@ Franco Moretti (Distant Reading - how to expand worldview of world literature)
 - Distant reading allows you to focus on units that are much smaller or much larger than the text
 
 Ben Schmidt, Ryan Cordell,
-Fyfe (2011 How Not to Read) "most promising opportunity of the digital humanities - it makes us ask new questions"
+Fyfe (2011 How Not to Read) "most promising opportunity of the digital humanities - it makes us ask new questions"-->
 
+{% capture text %}
 What questions do you want to answer by analyzing your text? Whether you have a specific hypothesis in mind or your work is more exploratory, analyzing the frequency of words in your text can be a good place to start. The results may confirm your suspicions or yield surprising outputs that lead to further research.
-
-
-## The How:
+{% endcapture %}
+{% include card.md text=text %}
 
 ### Word Frequency
 
@@ -35,7 +35,7 @@ What questions do you want to answer by analyzing your text? Whether you have a 
     - The number of times a word appears in a text, relative to the size of that text. 
 - Example: The word "love" might appear 200 times in a 100,000-word book and 200 times in a 50,000-word book. The word has the same raw frequency in both books, but the 50,000-word book has a higher relative frequency of the word "love" because there are a fewer number of words in the book.
 
-We can look at word frequency using [Voyant Tools](https://voyant-tools.org/){:target='_blank'}. Voyant Tools is an extremely powerful and modular online tool set for visualizing one or many documents.
+We can visualize word frequency using [Voyant Tools](https://voyant-tools.org/){:target='_blank'}. Voyant Tools is an extremely powerful and modular online tool set for visualizing one or many documents.
 
 **Basics of Voyant**
 
@@ -74,6 +74,10 @@ Voyant Tools is intended as a tool for exploration and to assist with interpreta
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
+**Tool Interactions**
+
+An essential part of Voyant is that events in one tool can cause changes in other tools (the exact interactions depend on a number of factors, including which tools are visible).
+
 **Stopword List**
 
 A stopword is a word (usually a commonly-used word) that an application has been programmed to ignore. Usually, stopword lists contain common words such as a, an, the, and, to, from, etc. Sometimes, it can be useful to add common words like person names or place names, depending on what your research question is. Stopword lists are customizable, allowing the researcher to remove words such as character or place names from the analysis. Voyant automatically analyzes your text using a stop word list, but you can delete or edit this list as you see fit.
@@ -96,7 +100,7 @@ If you have your own stopword list, you can upload this instead. Or you can simp
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
-### Word Concordance
+**Contexts**
 
 Word counts give us some information about a text, but often we need more context to make sense of how those words are being used. The "Contexts" tools shows each occurrence of a word with its surrounding text. The tool lets you choose from the text's most frequent words, or you can type a word of your choice into the search box in the lower left-hand corner of the panel. Move the "context" slider next to the search box to view more words before and after your search term.
 
@@ -104,20 +108,9 @@ Word counts give us some information about a text, but often we need more contex
 
 To see how many times words appear in close proximity to each other, you can also view the "Links" feature in the top left-hand panel of the homepage (the same panel where you see "Cirrus"). 
 
-### Other Voyant Tools
+**Other Voyant Tools**
 
 Voyant has a robust [documentation](http://docs.voyant-tools.org/tools/){:target='_blank'}. In it, you'll find a lot of tools listed that don't appear on the landing page. You can access these tools by hovering your cursor over the upper right-hand corner of each panel.
-
-**Tool Interactions**
-
-An essential part of Voyant is that events in one tool can cause changes in other tools (the exact interactions depend on a number of factors, including which tools are visible). For instance, try the following sequence in the window above:
-
-- click on a word (like "know") in Cirrus, the tool in the upper left
-- notice how the Trends tool (upper right) now shows just the word you clicked
-- click on one of the discs in the Trends tool
-- notice that the Contexts tool (bottom right) has updated with just the clicked word
-- click the first row of the Contexts tool (bottom right)
-- notice how the Reader tool has jumped to a location where that word appears, highlighted
 
 {% capture text %}
 **Exploration Time**
@@ -127,7 +120,7 @@ Let's explore a larger set of texts. Using a text corpus of your choice, spend s
 Sample Corpuses:
 - Your own writing
 - The Austen or Shakespeare corpuses that Voyant provides
-- This [corpus](https://www.dropbox.com/s/f7z1i8hg9pzg9wk/American.zip?dl=0){:target='_blank'} of American literature (here's a list of the [titles](https://www.dropbox.com/s/4sug61lqvfw3673/American.xlsx?dl=0)){:target='_blank'} (Curated by [Miriam Posner](https://github.com/miriamposner/voyant-workshop/blob/master/investigating-texts-with-voyant.md))
+- This [corpus](https://www.dropbox.com/s/f7z1i8hg9pzg9wk/American.zip?dl=0){:target='_blank'} of American literature (here's a list of the [titles](https://www.dropbox.com/s/4sug61lqvfw3673/American.xlsx?dl=0)) (Curated by [Miriam Posner](https://github.com/miriamposner/voyant-workshop/blob/master/investigating-texts-with-voyant.md))
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
@@ -152,8 +145,4 @@ Want to compare similarities between your words' contexts? Visualizing your text
 **Word Tree Activity: Give it a try using [WordTree](https://www.jasondavies.com/wordtree/)** 
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
-
-# Additional Resources
-
-- [Antconc](https://www.laurenceanthony.net/software/antconc/): an open-source tool for word concordance and text analysis. This software is an easy download with robust documentation and more reliable performance than Voyant.
 

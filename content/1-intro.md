@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Intro
 nav: true
 --- 
 
@@ -25,7 +25,7 @@ In text analysis (also referred to as text mining), units of analysis tend to be
 **Activity: Find a Text**
 1. Go to [https://archive.org/details/waldenorlifeinwo1854thor/page/n3](https://archive.org/details/waldenorlifeinwo1854thor/page/n3){:target='_blank'}, the record for an 1854 edition of Henry David Thoreau's Walden on [Archive.org](https://archive.org/)
 2. Take a look at the download options on the right side of the page. At the bottom of this box, click on `SHOW ALL`
-3. Click on the .txt file (`waldenorlifeinwo1854thor_djvu.txt`). This opens the text in a new tab. Select all of this text, copy it, and paste it into a new file in Visual Studio Code.
+3. Click on the .txt file (`waldenorlifeinwo1854thor_djvu.txt`). This opens the text in a new tab. Select all of this text, copy it, and paste it into a new file into your text editor.
 4. Save this file as walden.txt
 5. Take a moment to refer back to the digitized pages of the book. How are the layout and content of the original images transformed in the text file you just created?
 {% endcapture %}
@@ -63,21 +63,15 @@ Two types of computer files: **Text** and **Binary**
 
 - **Text Files** contain bytes that represent text characters organized in lines (e.g. `a`, `B`, space, tab, line breaks, etc.). It can be opened with a text editor to see the characters.
 - **Binary Files** contain bytes that are NOT text characters. It will require software (other than a text editor) that can correctly interpret the bytes. For example, a JPG image, MP3 sound file, or a ZIP compressed folder.
+
+(adapted from Evan Williamson's [File Type Notes](https://evanwill.github.io/_drafts/notes/file-types.html){:target='_blank'})
 {% endcapture %}
 {% include card.md text=text header="Text and Binary Files" %}
-
-Usually, when talking about text files, we mean **plain text**.
-It is defined by [Unicode standard](https://www.unicode.org/) as:
-
-{% capture text %}
-"Plain text is a pure sequence of character codes; plain Unicode-encoded text is therefore a sequence of Unicode character codes."
-{% endcapture %}
-{% include card.md text=text %}
 
 Plain text files are text files, i.e. contain only characters like `a`, `1`, `<`, `!`, etc. 
 Some characters might be "hidden" control characters, such as tabs and line breaks. 
 
-There are tools that make the process of transferring your text to plain text easier. If you are starting with images or pdfs, optical character recognition (OCR) is a good place to start.
+There are tools that make the process of transferring your text to plain text easier. If you are starting with images or pdfs, optical character recognition (OCR) is a good place to begin.
 
 ### <a name="ocr">OCR (Optical Character Recognition)</a>
 
@@ -94,30 +88,9 @@ OCR identifies printed or handwritten text characters in digital images of physi
 {% endcapture %}
 {% include card.md text=text header="Traditional OCR Workflow" %}
 
-**Example:**
+{% include figure.html img="ocr.jpg" alt="ocr" caption="OCR of Microfilm Scan" width="100%" %}
 
-{% include figure.html img="spider-letter.jpg" alt="spiderman fan mail" caption="Spiderman fan mail from 1978" width="75%" %}
-
-{% include figure.html img="abbyy.jpg" alt="ocr" caption="OCR with ABBYY FineReader" width="75%" %}
-
-{% include figure.html img="spiderman.jpg" alt="spiderman text" caption="OCR results (.txt)" width="75%" %}
-
-**OCR Software:**
-
-Tesseract
-- Open source, ready-to-use package available: [https://github.com/tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract)
-- Docs: [https://tesseract-ocr.github.io/](https://tesseract-ocr.github.io/)
-- Wiki: [https://github.com/tesseract-ocr/tesseract/wiki](https://github.com/tesseract-ocr/tesseract/wiki)
-
-ABBYY FineReader
-- Proprietary, but commonly used: [https://www.abbyy.com/en-us/finereader/](https://www.abbyy.com/en-us/finereader/)
-
-[Adobe Creative Cloud](https://www.adobe.com/creativecloud.html) has OCR capabilities
-
-OCRopus/OCRopy
-- Python-based, more DIY/modular, but used in research with some advancements possible with customized models: [https://github.com/tmbdev/ocropy](https://github.com/tmbdev/ocropy)
-- Recent article: [http://www.digitalhumanities.org/dhq/vol/11/2/000288/000288.html](http://www.digitalhumanities.org/dhq/vol/11/2/000288/000288.html)
-
+{% include figure.html img="ocr2.jpg" alt="ocr" caption="OCR of quality Tiff file" width="100%" %}
 
 ### <a name="clean">Text Cleaning</a>
 
@@ -126,10 +99,6 @@ After you've OCRd your text and transferred it to plain text format, you will li
 {% include figure.html img="italian.jpg" alt="italian" caption="The Italian, Ann Radcliffe (1797)" width="75%" %}
 
 {% include figure.html img="italian-text.jpg" alt="italian text" caption="Plain text, after OCR" width="75%" %}
-
-Or maybe your book came with a large amount of front matter that you'd like to get rid of:
-
-{% include figure.html img="italian-front.jpg" alt="italian front matter" caption="Front matter from The Italian, first edition (1797)" width="75%" %}
 
 Find and replace might help with some of these problems, but for others you need a stronger tool. In this case, a lot of people will use Regular Expressions. Regular Expressions are sequences of symbols and characters expressing a string to be searched for within a text. They can get very complicated and are not very intuitive, so we won't spend too much time with them now, but we'll apply a few here just to get a taste. 
 
@@ -163,7 +132,3 @@ The text still isn't 100% clean, but we've managed to take out most of the page 
 
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
-
-**More Regular Expression Resources:**
-- [Regex exercises](https://regexone.com/)
-- [Regex cheat sheet](https://www.rexegg.com/regex-quickstart.html)
