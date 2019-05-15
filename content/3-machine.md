@@ -19,7 +19,7 @@ nav: true
 - Text mining that allows the user to identify patterns in a corpus of texts
     - **Input**: texts 
     - **Output**: several lists of words that appear in the texts
-- Groups words across the corpus into clusters of words, or "topics" based on those words similarity and dissimilarity
+- Groups words across the corpus into clusters of words, or "topics" based on those words' similarity and dissimilarity
 - In a good topic model, the words in a topic make sense (for example: "navy, ship, captain" and "tobacco, farm, crops")
 - Usually works best on large bodies of text
 - Some familiarity with your text is important
