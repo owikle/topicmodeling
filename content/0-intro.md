@@ -46,26 +46,29 @@ Usually when people analyze text, they are interested in words (i.e. word freque
 
 - structured data vs. unstructured data
 
-Below you'll find definitions and examples of [plain text](#plain), [OCR](#ocr), and [text cleaning](#clean)
+Below you'll find definitions and examples of [File Type](#file), [OCR](#ocr), and [text cleaning](#clean)
 
-### <a name="plain">Plain Text</a>
 
-Plain text is basically just what it describes, a file format that saves within it the bare minimum amount of information presented to it. Whereas a Microsoft Word document file will save within it a variety of information about the font, layout, and properties of the document prepared, a plain text file will save just the text. Text analysis usually operates on plain text files because the format is conducive to the computer's ability to identify characters and words.
-
-{% include figure.html img="word.jpg" alt="rich text" caption="Rich Text in Microsoft Word" width="75%" %}
-
-{% include figure.html img="txt.jpg" alt="plain text" caption="Plain Text in a Text Editor" width="75%" %}
-
-The following exercise will demonstrate the differences between plain text (what you see in your text editor) and rich text (what you see in Microsoft Word). This is adapted from a tweet by [Alex Gil](https://twitter.com/elotroalex?lang=en) and Devin Becker's [Text Analysis for Writers Workshop](https://dcnb.github.io/text-analysis-for-writers/). 
+### <a name="file">File Type</a>
 
 {% capture text %}
-**Activity: Plain Text vs. Word Doc**
-1. Open your text editor and create a TXT file that includes only the letter "a" (no spaces or breaks), then save this as "a.txt" in a new folder. 
-2. Now open Word and create a similar file that only includes "a" and save it as "a.docx in that same folder.
-3. Open your new folder via the Finder or Explorer and examine the file sizes. Notices anything?
-4. Optional: If you're using a windows computer, change the file extension of the .docx file to ".zip." Open the .zip file by clicking on it and examine all the accompanying files within. What do you see? Try opening some of those files with your text editor!
+Two types of computer files: **Text** and **Binary**
+
+- **Text Files** contain bytes that represent text characters organized in lines (e.g. `a`, `B`, space, tab, line breaks, etc.). It can be opened with a text editor to see the characters.
+- **Binary Files** contain bytes that are NOT text characters. It will require software (other than a text editor) that can correctly interpret the bytes. For example, a JPG image, MP3 sound file, or a ZIP compressed folder.
 {% endcapture %}
-{% include alert.md text=text color=secondary %}
+{% include card.md text=text header="Text and Binary Files" %}
+
+Usually, when talking about text files, we mean **plain text**.
+It is defined by [Unicode standard](https://www.unicode.org/) as:
+
+{% capture text %}
+"Plain text is a pure sequence of character codes; plain Unicode-encoded text is therefore a sequence of Unicode character codes."
+{% endcapture %}
+{% include card.md text=text %}
+
+Plain text files are text files, i.e. contain only characters like `a`, `1`, `<`, `!`, etc. 
+Some characters might be "hidden" control characters, such as tabs and line breaks. 
 
 There are tools that make the process of transferring your text to plain text easier. If you are starting with images or pdfs, optical character recognition (OCR) is a good place to start.
 
@@ -78,7 +81,7 @@ OCR identifies printed or handwritten text characters in digital images of physi
 2. **Image preprocessing** (deskew, scale remove borders, high-pass filter)
 3. **Layout detection and segmentation** (identify organization and lines of text to pass to OCR)
 4. **OCR** (feature extraction)
-5. **Save results as plain text** (.txt files)
+5. **Text post-processing** (adaptive recognition, lexicons, co-occurrence, noise reduction)
 
 (adapted from Evan Williamson's [OCR: Workflows and Data](https://osf.io/gd5ka/){:target='_blank'})
 {% endcapture %}
@@ -101,6 +104,12 @@ Tesseract
 
 ABBYY FineReader
 - Proprietary, but commonly used: [https://www.abbyy.com/en-us/finereader/](https://www.abbyy.com/en-us/finereader/)
+
+[Adobe Creative Cloud](https://www.adobe.com/creativecloud.html) has OCR capabilities
+
+OCRopus/OCRopy
+- Python-based, more DIY/modular, but used in research with some advancements possible with customized models: [https://github.com/tmbdev/ocropy](https://github.com/tmbdev/ocropy)
+- Recent article: [http://www.digitalhumanities.org/dhq/vol/11/2/000288/000288.html](http://www.digitalhumanities.org/dhq/vol/11/2/000288/000288.html)
 
 
 ### <a name="clean">Text Cleaning</a>
