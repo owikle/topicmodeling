@@ -5,9 +5,9 @@ nav: true
 
 # Intro to Text as Data
 
-Utilizing text as data requires breaking down a text into smaller units of analysis. Doing so can allow us to see patterns and approach text from different points of entry.
+Utilizing text as data requires breaking down a text into smaller units of analysis. Doing so allows us to see patterns and approach text from different points of entry.
 
-In text analysis, units of analysis tend to be texts (broken up as discrete books, documents, poems, etc.), and words. Much of the time spent doing text analysis research is spent preparing text so that these smaller units of analyses can be accessed by the digital tools we use.
+In text analysis (also referred to as text mining), units of analysis tend to be groupings of text (broken up as discrete books, documents, poems, etc.), and words. Much of the time spent doing text analysis research is spent preparing text so that these smaller units of analyses can be accessed by the digital tools we use.
 
 ## Selecting and getting to know a corpus
 
@@ -24,17 +24,16 @@ In text analysis, units of analysis tend to be texts (broken up as discrete book
 {% capture text %}
 **Activity: Find a Text**
 1. Go to [https://archive.org/details/waldenorlifeinwo1854thor/page/n3](https://archive.org/details/waldenorlifeinwo1854thor/page/n3){:target='_blank'}, the record for an 1854 edition of Henry David Thoreau's Walden on [Archive.org](https://archive.org/)
-2. Take a look at the download options on the right side of the page. Click on `Full Text`
-3. This will take you to a page containing all of the book's text. You'll need to select all of this text, copy it, and paste it into a new file in your text editor. If you copied over some extra material from the webpage (not actually included in the book), you may also need to delete this from the top of your text file (from `Skip to main content` down to `See other formats`)
+2. Take a look at the download options on the right side of the page. At the bottom of this box, click on `SHOW ALL`
+3. Click on the .txt file (`waldenorlifeinwo1854thor_djvu.txt`). This opens the text in a new tab. Select all of this text, copy it, and paste it into a new file in Visual Studio Code.
 4. Save this file as walden.txt
-5. Take a moment to refer back to the digitized pages of the book. How is their layout and content represented in the text file you just created?
+5. Take a moment to refer back to the digitized pages of the book. How are the layout and content of the original images transformed in the text file you just created?
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
 **Getting to know your corpus**
-- Text analysis allows us to look at the big picture, usually allowing us to explore broad patterns that span large bodies of text. However, this doesn't absolve you from actually having to read some of the text you are analyzing. In order to understand the outputs from the algorithms you run on your text, and to be sure that the results you are getting are actually valid, you need to be somewhat familiar with the text you are analyzing.
+- Text analysis allows us to look at the big picture, usually enabling us to explore broad patterns that span large bodies of text. However, this doesn't absolve you from actually having to read some of the text you are analyzing. In order to understand the outputs from the algorithms you run on your text, and to be sure that the results you are getting are actually valid, you need to be somewhat familiar with the text you are analyzing.
 - See ["When you have a MALLET, everything looks like a nail"](http://sappingattention.blogspot.com/2012/11/when-you-have-mallet-everything-looks.html) for an example of what can happen when you're not familiar with your data or the tools you're using.
-
 
 ## Defining Units of Analysis
 
@@ -42,11 +41,19 @@ In text analysis, units of analysis tend to be texts (broken up as discrete book
 
 Usually when people analyze text, they are interested in words (i.e. word frequency, order, meaning). Therefore, a primary part of preparing your text for research is making sure the words in your corpus are identifiable units of measurement. You may start your project with scanned images of book pages. What format do you need to transform this text to, and how will you accomplish that transformation?
 
-**Bag of Words**
+**Thinking of Text as a "Bag of Words"**
 
-- structured data vs. unstructured data
+{% capture text %}
+- **Structured data**: Data with fixed fields (key/value pairs, relations)
+    - Example: csv of names, phone numbers, dates, zip codes
+- **Unstructured data**: Boundaries of individual items, relations between items, meaning of items are not computer-readable
+    - Example: un-coded text
+{% endcapture %}
+{% include card.md text=text header="Structured Data vs. Unstructured Data" %}
 
-Below you'll find definitions and examples of [File Type](#file), [OCR](#ocr), and [text cleaning](#clean)
+In textual research in the digital humanities, usually we are working with unstructured data.
+
+Below you'll find definitions and examples of [file type](#file), [OCR](#ocr), and [text cleaning](#clean)
 
 
 ### <a name="file">File Type</a>
