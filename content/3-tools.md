@@ -1,6 +1,6 @@
 ---
 title: Tools
-nav: true
+nav: false
 ---
 
 # Tools and Resources

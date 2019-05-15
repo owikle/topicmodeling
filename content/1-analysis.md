@@ -24,6 +24,7 @@ Fyfe (2011 How Not to Read) "most promising opportunity of the digital humanitie
 
 What questions do you want to answer by analyzing your text? Whether you have a specific hypothesis in mind or your work is more exploratory, analyzing the frequency of words in your text can be a good place to start. The results may confirm your suspicions or yield surprising outputs that lead to further research.
 
+
 ## The How:
 
 ### Word Frequency

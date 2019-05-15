@@ -42,6 +42,10 @@ In text analysis, units of analysis tend to be texts (broken up as discrete book
 
 Usually when people analyze text, they are interested in words (i.e. word frequency, order, meaning). Therefore, a primary part of preparing your text for research is making sure the words in your corpus are identifiable units of measurement. You may start your project with scanned images of book pages. What format do you need to transform this text to, and how will you accomplish that transformation?
 
+**Bag of Words**
+
+- structured data vs. unstructured data
+
 Below you'll find definitions and examples of [plain text](#plain), [OCR](#ocr), and [text cleaning](#clean)
 
 ### <a name="plain">Plain Text</a>
