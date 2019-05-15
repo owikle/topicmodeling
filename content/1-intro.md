@@ -9,6 +9,8 @@ Utilizing text as data requires breaking down a text into smaller units of analy
 
 In text analysis (also referred to as text mining), units of analysis tend to be groupings of text (broken up as discrete books, documents, poems, etc.), and words. Much of the time spent doing text analysis research is spent preparing text so that these smaller units of analyses can be accessed by the digital tools we use.
 
+-----------------
+
 ## Selecting and getting to know a corpus
 
 **Where to find texts**
@@ -33,7 +35,8 @@ In text analysis (also referred to as text mining), units of analysis tend to be
 
 **Getting to know your corpus**
 - Text analysis allows us to look at the big picture, usually enabling us to explore broad patterns that span large bodies of text. However, this doesn't absolve you from actually having to read some of the text you are analyzing. In order to understand the outputs from the algorithms you run on your text, and to be sure that the results you are getting are actually valid, you need to be somewhat familiar with the text you are analyzing.
-- See ["When you have a MALLET, everything looks like a nail"](http://sappingattention.blogspot.com/2012/11/when-you-have-mallet-everything-looks.html) for an example of what can happen when you're not familiar with your data or the tools you're using.
+
+-----------------
 
 ## Defining Units of Analysis
 
@@ -54,7 +57,6 @@ Usually when people analyze text, they are interested in words (i.e. word freque
 In textual research in the digital humanities, usually we are working with unstructured data.
 
 Below you'll find definitions and examples of [file type](#file), [OCR](#ocr), and [text cleaning](#clean)
-
 
 ### <a name="file">File Type</a>
 

@@ -12,28 +12,17 @@ nav: true
 {% endcapture %}
 {% include card.md text=text header="Why digital text analysis?" %}
 
-<!--Tools you know about/are using to analyze and visualize text?
-
-Franco Moretti (Distant Reading - how to expand worldview of world literature)
-- Analyzing 30,000 British novels. Reading 'more' can't be the answer 
-- Close reading depends on an extremely small canon
-- Distant reading allows you to focus on units that are much smaller or much larger than the text
-
-Ben Schmidt, Ryan Cordell,
-Fyfe (2011 How Not to Read) "most promising opportunity of the digital humanities - it makes us ask new questions"-->
-
-{% capture text %}
 What questions do you want to answer by analyzing your text? Whether you have a specific hypothesis in mind or your work is more exploratory, analyzing the frequency of words in your text can be a good place to start. The results may confirm your suspicions or yield surprising outputs that lead to further research.
-{% endcapture %}
-{% include card.md text=text %}
+
+-----------------
 
 ### Word Frequency
 
-- Raw frequency
+- **Raw frequency**
     - The number of times a word appears in a text
-- Relative frequency
+- **Relative frequency**
     - The number of times a word appears in a text, relative to the size of that text. 
-- Example: The word "love" might appear 200 times in a 100,000-word book and 200 times in a 50,000-word book. The word has the same raw frequency in both books, but the 50,000-word book has a higher relative frequency of the word "love" because there are a fewer number of words in the book.
+- **Example:** The word "love" might appear 200 times in a 100,000-word book and 200 times in a 50,000-word book. The word has the same raw frequency in both books, but the 50,000-word book has a higher relative frequency of the word "love" because there are a fewer number of words in the book.
 
 We can visualize word frequency using [Voyant Tools](https://voyant-tools.org/){:target='_blank'}. Voyant Tools is an extremely powerful and modular online tool set for visualizing one or many documents.
 
@@ -100,7 +89,9 @@ If you have your own stopword list, you can upload this instead. Or you can simp
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
-**Contexts**
+-----------------
+
+### Contexts
 
 Word counts give us some information about a text, but often we need more context to make sense of how those words are being used. The "Contexts" tools shows each occurrence of a word with its surrounding text. The tool lets you choose from the text's most frequent words, or you can type a word of your choice into the search box in the lower left-hand corner of the panel. Move the "context" slider next to the search box to view more words before and after your search term.
 
@@ -134,6 +125,8 @@ Sample Corpuses:
 - What are the values/limitations of 'not reading' this way?
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
+
+-----------------
 
 ### Word Tree
 
