@@ -41,6 +41,8 @@ Topic modeling is an example of **unsupervised machine learning**
 {% capture text %}
 **Topic Modeling Activity** 
 - Topic modeling in-browser with [jsLDA](https://mimno.infosci.cornell.edu/jsLDA/)
+    - Explore this sample corpus of <a href="../data/austen_all.txt">Jane Austen texts</a>, or try it with your own corpus
+    - Here's a <a href="../data/austen_stopwords.txt">sample stopword list</a> you can use
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
