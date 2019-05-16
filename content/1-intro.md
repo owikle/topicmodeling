@@ -13,13 +13,13 @@ In text analysis (also referred to as text mining), units of analysis tend to be
 
 ## Where to Find Texts
 
-Depending on what you're going to do with your texts, you'll need to pay attention to whether or not they are in public domain. Texts that are no longer under copyright are usually easier to use for analytical research because they have a greater likelihood of already being digitized. (Of course, this also has the effect of skewing text research in DH so that it focuses more on older literary works.) A good resource to use if you're wondering whether something is under copyright is Cornell University Library's [Copyright Information Center](https://copyright.cornell.edu/publicdomain). Currently, most works published before 1924 are in the public domain.
+Depending on what you're going to do with your texts, you'll need to pay attention to whether or not they are in public domain. Texts that are no longer under copyright are usually easier to use for analytical research because they have a greater likelihood of already being digitized. (Of course, this also has the effect of skewing text research in DH so that it focuses more on older literary works.) A good resource to use if you're wondering whether something is under copyright is Cornell University Library's [Copyright Information Center](https://copyright.cornell.edu/publicdomain){:target='_blank'}. Currently, most works published before 1924 are in the public domain.
 
-- [Project Gutenberg](https://www.gutenberg.org/)
+- [Project Gutenberg](https://www.gutenberg.org/){:target='_blank'}
     - Full text of thousands of free books. Text is usually fairly clean, but often little bibliographic information.
-- [Archive.org](https://archive.org/)
+- [Archive.org](https://archive.org/){:target='_blank'}
     - Full texts and scans of books, lots of different download options from epub to pdf, to plain text.
-- [HathiTrust](https://www.hathitrust.org/)
+- [HathiTrust](https://www.hathitrust.org/){:target='_blank'}
     - Millions of digitized books, public domain and copyrighted. Cleanliness of text varies. More advanced features require institutional membership.
 
 {% capture text %}
@@ -34,7 +34,7 @@ Depending on what you're going to do with your texts, you'll need to pay attenti
 
 ## Getting to Know Your Corpus
 
-Text analysis allows us to look at the big picture, usually enabling us to explore broad patterns that span large bodies of text. However, this doesn't absolve you from actually having to read some of the text you are analyzing. In order to understand the outputs from the algorithms you run on your text, and to be sure that the results you are getting are actually valid, you need to be somewhat familiar with the text you are analyzing.
+Text analysis allows us to look at the big picture, enabling us to explore broad patterns that span large bodies of text. However, this doesn't absolve you from actually having to read some of the text you are analyzing. In order to understand the outputs from the algorithms you run on your text, and to be sure that the results you are getting are actually valid, you need to be somewhat familiar with the text you are analyzing.
 
 -----------------
 
@@ -42,21 +42,21 @@ Text analysis allows us to look at the big picture, usually enabling us to explo
 
 {% include figure.html img="letters.jpg" alt="rich text" width="75%" %}
 
-Usually when people analyze text, they are interested in words (i.e. word frequency, order, meaning). Therefore, a primary part of preparing your text for research is making sure the words in your corpus are identifiable units of measurement. You may start your project with scanned images of book pages. What format do you need to transform this text to, and how will you accomplish that transformation?
+Usually when people analyze text, they are interested in words (i.e. word frequency, order, etc.). Therefore, a primary part of preparing your text for research is making sure the words in your corpus are identifiable units of measurement.
 
 **Thinking of Text as a "Bag of Words"**
 
 {% capture text %}
 - **Structured data**: Data with fixed fields (key/value pairs, relations)
     - Example: csv of names, phone numbers, dates, zip codes
-- **Unstructured data**: Boundaries of individual items, relations between items, meaning of items are not computer-readable
+- **Unstructured data**: No computer-readable structure or relationships between units of analysis
     - Example: un-coded text
 {% endcapture %}
 {% include card.md text=text header="Structured Data vs. Unstructured Data" %}
 
 In textual research in the digital humanities, usually we are working with unstructured data.
 
-Below you'll find definitions and examples of [file type](#file-type), [OCR](#ocr-optical-character-recognition), and [text cleaning](#text-cleaning)
+You may start your project with scanned images of book pages. What's the process for transforming these images to computer-readable text? Below you'll find definitions and examples of [file type](#file-type), [OCR](#ocr-optical-character-recognition), and [text cleaning](#text-cleaning)
 
 ### File Type
 
@@ -85,7 +85,7 @@ OCR identifies printed or handwritten text characters in digital images of physi
 4. **OCR** (feature extraction)
 5. **Text post-processing** (adaptive recognition, lexicons, co-occurrence, noise reduction)
 
-(adapted from Evan Williamson's [OCR: Workflows and Data](https://osf.io/gd5ka/){:target='_blank'})
+*(adapted from Evan Williamson's [OCR: Workflows and Data](https://osf.io/gd5ka/){:target='_blank'})*
 {% endcapture %}
 {% include card.md text=text header="Traditional OCR Workflow" %}
 
@@ -103,22 +103,27 @@ After you've OCRed your text and transferred it to plain text format, you will l
 
 Find and replace might help with some of these problems, but for others you need a stronger tool. In this case, a lot of people will use Regular Expressions. Regular Expressions are sequences of symbols and characters expressing a string to be searched for within a text. They can get very complicated and are not very intuitive, so we won't spend too much time with them now, but we'll apply a few here just to get a taste. 
 
+A good resource for learning regular expressions is [RegExr](https://regexr.com/){:target='_blank'}, and a good cheat sheet is [Regex cheat sheet](https://www.rexegg.com/regex-quickstart.html){:target='_blank'}
+
 {% capture text %}
 **Activity: Clean Your Text With Regular Expressions**
-1. Open walden.txt in Visual Studio Code (if you've misplaced it you can also download it here: <a href="../data/walden.txt">walden.txt</a>)
+1. Open walden.txt in your text editor (if you've misplaced it you can also download it here: <a href="../data/walden.txt" target="_blank">walden.txt</a>)
 2. Delete the front matter
-3. Click on `Edit > Find` (`cmd + F` on mac or `ctl + F` on pc) to open a search box, which should appear in the top right-hand corner of your window in Visual Studio Code
-4.  On the right side of the search box, you'll see a button with this symbol: `.*`. If you hover over this button, the phrase `Use Regular Expression` appears. Click on this button
-
-{% include figure.html img="regex1.jpg" alt="vs code search" caption="Search Box in VS Code" width="100%" %}
+3. Click on `Edit > Find` (`cmd + F` on mac or `ctl + F` on pc) to open a search box
+4. Make sure your regular expression function is turned on
 
 **Remove sets of page titles and page numbers:**
-1. In the search box, type: `^[A-Z]+\.\s\d+`
-    - `^` starts at the beginning of a line, `[A-Z]+` finds one or more letter characters, `\.` finds a period, `\s` finds a space, `\d+` finds one or more digits (numbers)
-2. Toggle the arrow to the left of the search box. To the right of the box that says `Replace`, you'll see two buttons. One lets you replace one instance at a time, the other lets you replace all instances at once
-3. To get rid of page titles with two words, add a space and another set of letter characters (`\s[A-Z]+`): `^[A-Z]+\s[A-Z]+\.\s\d+`
-4. To get rid of page titles with three words, add two instances of `\s[A-Z]+`: `^[A-Z]+\s[A-Z]+\s[A-Z]+\.\s\d+`
-5. Flip these parts around to get rid of instances where page titles come after page numbers: `^\d+\s[A-Z]+\.`
+1. In the search box, type: `[A-Z]+\.\s\d+`
+    - `[A-Z]+` finds one or more capital letter characters, `\.` finds a period, `\s` finds a space, `\d+` finds one or more digits (numbers)
+2. Using the Find and Replace function on your editor, remove all instances of this text pattern.
+3. Not all of the titles fit that pattern. Try some of the following combinations or create your own
+    - `([A-Z]+\s){3}[A-Z]+\W` (3 words period)
+    - `([A-Z]+\s){3}[A-Z]+\W\s\d+` (3 words comma number)
+    - `([A-Z]+\s){3}` (3 words)
+    - `([A-Z]+\s){2}` (2 words)
+    - `^[A-Z][A-Z]+\S+` (a string of uppercase words followed by a non-whitespace character)
+    - `^[A-Z][A-Z]+\W[A-Z]+\W` (a string of uppercase words followed by a non-word character, uppercase word, and another non-word character)
+4. Flip these parts around to get rid of instances where page titles come after page numbers: `^\d+\s[A-Z]+\W+`
 
 {% include figure.html img="regex3.jpg" alt="regex remove page titles" caption="Use regular expressions to remove redundant page titles and numbers" width="100%" %}
 

@@ -24,7 +24,7 @@ What questions do you want to answer by analyzing your text? Whether you have a 
     - The number of times a word appears in a text, relative to the size of that text. 
 - **Example:** The word "love" might appear 200 times in a 100,000-word book and 200 times in a 50,000-word book. The word has the same raw frequency in both books, but the 50,000-word book has a higher relative frequency of the word "love" because there are a fewer number of words in the book.
 
-We can visualize word frequency using [Voyant Tools](https://voyant-tools.org/){:target='_blank'}. Voyant Tools is an extremely powerful and modular online tool set for visualizing one or many documents.
+We can visualize word frequency using [Voyant Tools](https://voyant-tools.org/){:target='_blank'}. Voyant Tools is a modular online tool set for visualizing one or many documents.
 
 **Basics of Voyant**
 
@@ -36,8 +36,6 @@ Voyant Tools is intended as a tool for exploration and to assist with interpreta
 
 {% capture text %}
 **Activity: Word Frequency in *Walden***
-
-{% include figure.html img="voyant.jpg" alt="voyant" width="75%" %}
 
 1. Go to [Voyant Tools](https://voyant-tools.org/){:target='_blank'}
 2. Upload the walden.txt file we created and cleaned in the previous lesson

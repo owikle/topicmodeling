@@ -10,9 +10,10 @@ nav: true
 - [Regex cheat sheet](https://www.rexegg.com/regex-quickstart.html)
 - Ted Underwood, [DataMunging](https://github.com/tedunderwood/DataMunging), example of Python scripts used to clean and normalize OCR
 
-## Concordancing and Text Analysis
+## Text Analysis
 
 - [Antconc](https://www.laurenceanthony.net/software/antconc/): an open-source tool for word concordance and text analysis. This software is an easy download with robust documentation and more reliable performance than Voyant.
+- [HathiTrust Research Center](https://analytics.hathitrust.org/)
 
 ## NLP
 
