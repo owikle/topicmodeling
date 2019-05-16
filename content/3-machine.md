@@ -3,15 +3,34 @@ title: Machine Learning
 nav: true
 ---
 
-# Machine Learning
+# Machine Learning (ML)
 
-## Natural Language Processing
+ML is the application of algorithms and statistical modeling to allow computers to "learn" from data to do a task (often overlapping or used interchangeably with Artificial Intelligence / AI).
 
-- An example of supervised machine learning
-- [Natural Language Understanding Demo](https://natural-language-understanding-demo.ng.bluemix.net/)
-- Sentiment Analysis with books [Book Visualizations Sandbox](https://observablehq.com/@bmschmidt/book-visualizations-sandbox?htid=pst.000061166424)
-- [VPOD sentiment analysis](https://uidaholib.github.io/poemchoice/index.html)
-- [Software 2.0](https://medium.com/@karpathy/software-2-0-a64152b37c35) (work on curating training data sets, rather than developing software, machine learning does the rest!)
+ML tasks are broadly separated into *supervised* or *unsupervised* learning.
+Supervised learning tasks typically involve feeding the algorithm a labeled training data set which is used to build a model that can then classify unknown items, making inferences based on what it knows. 
+Unsupervised learning tasks involve feeding unlabeled data to an algorithm that can identify patterns and clustering in the grouping. 
+
+The ability to learn from data is changing the approach to many computational tasks, such as OCR or NLP, putting the focus on curating training data sets rather than developing new software (see Andrej Karpathy, [Software 2.0](https://medium.com/@karpathy/software-2-0-a64152b37c35), 2017).
+However, computational techniques can also challenge our expertise in DH, stretching even stats experts ability to evaluate the validity of complex models (for fun, [spurious correlations](http://www.tylervigen.com/spurious-correlations){:target="blank"}).
+
+## Natural Language Processing (NLP)
+
+NLP is a family of techniques to analyze unstructured language data found in everyday speech and writing. 
+
+Historically, it wasn't based in ML, but relied on manually identifying rules and patterns in human speech that could be parsed by code.
+For example, take a minute to play with [ELIZA](https://www.masswerk.at/elizabot/eliza.html) (1966), an electronic psychologist based in early NLP pattern matching.
+
+The web has provided an explosion of unstructured text, making NLP a huge business as enterprise seeks to extract information from social media or create chat-bots to minimize labor costs.
+Typical tasks involve chunking/stemming, part-of-speech tagging, named entity recognition (NER), classification, and sentiment analysis.
+Speech recognition, OCR , and text-to-speech are also considered NLP tasks.
+
+Demos:
+
+- IBM Watson [Natural Language Understanding](https://www.ibm.com/watson/services/natural-language-understanding/) (API trained on web content)
+    - [VPOD sentiment analysis](https://uidaholib.github.io/poemchoice/index.html) (poetry sent to IBM NLU API for sentiment analysis)
+- Text-processing [NLTK demos](http://text-processing.com/demo/) (free API, based on [Python NLTK](https://www.nltk.org/))
+- [Book Visualizations Sandbox](https://observablehq.com/@bmschmidt/book-visualizations-sandbox?htid=pst.000061166424) (Text and sentiment analysis with Hathi books. Shared on the Observable platform, a web-based code notebook for javascript)
 
 -----------------
 
@@ -61,7 +80,9 @@ Don't be afraid to fail or get bad results. Topic modeling is exploratory, and s
 
 **Google Books [Ngram Viewer](https://books.google.com/ngrams){:target='_blank'}**
 
-<div class="pb-3" style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/what_we_learned_from_5_million_books" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+<div class="p-3">
+<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/what_we_learned_from_5_million_books" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div>
+</div>
 
 -----------------
 

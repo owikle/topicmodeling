@@ -21,7 +21,9 @@ nav: true
 - Python [NLTK](http://www.nltk.org/), learn via the [NLTK Book](http://www.nltk.org/book/) (Steven Bird, Ewan Klein, and Edward Loperm, designed to teach text analysis)
 - [R](https://cran.rstudio.com/), learn via [Text analysis with R for students of literature](http://www.matthewjockers.net/text-analysis-with-r-for-students-of-literature/), Matthew L Jockers (New York : Springer-Verlag, 2014).
 - [Open Calais](http://www.opencalais.com/) (API trained on web and newspaper text)
-- Watson [Natural Language Understanding](https://www.ibm.com/watson/developercloud/natural-language-understanding.html) (API trained on web content)
+- Watson [Natural Language Understanding](https://www.ibm.com/watson/services/natural-language-understanding/) (API trained on web content)
+- Google Cloud [Natural Language](https://cloud.google.com/natural-language/)
+- [Text-processing](http://text-processing.com/docs/index.html) (free API, based on [Python NLTK](https://www.nltk.org/))
 
 ## Topic Modeling
 
