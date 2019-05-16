@@ -56,9 +56,9 @@ Usually when people analyze text, they are interested in words (i.e. word freque
 
 In textual research in the digital humanities, usually we are working with unstructured data.
 
-Below you'll find definitions and examples of [file type](#file), [OCR](#ocr), and [text cleaning](#clean)
+Below you'll find definitions and examples of [file type](#file-type), [OCR](#ocr-optical-character-recognition), and [text cleaning](#text-cleaning)
 
-### <a name="file">File Type</a>
+### File Type
 
 {% capture text %}
 Two types of computer files: **Text** and **Binary**
@@ -75,7 +75,7 @@ Some characters might be "hidden" control characters, such as tabs and line brea
 
 There are tools that make the process of transferring your text to plain text easier. If you are starting with images or pdfs, optical character recognition (OCR) is a good place to begin.
 
-### <a name="ocr">OCR (Optical Character Recognition)</a>
+### OCR (Optical Character Recognition)
 
 OCR identifies printed or handwritten text characters in digital images of physical documents. Once translated by the OCR software, the characters can be recognized as text by the computer, allowing a document's content to be processed and manipulated as data.
 
@@ -94,7 +94,7 @@ OCR identifies printed or handwritten text characters in digital images of physi
 
 {% include figure.html img="ocr2.jpg" alt="ocr" caption="OCR of quality Tiff file" width="100%" %}
 
-### <a name="clean">Text Cleaning</a>
+### Text Cleaning
 
 After you've OCRd your text and transferred it to plain text format, you will likely discover errors in your new text file(s). OCR is not perfect. Especially if you are using older texts, you might encounter problems such as your s's looking like f's:
 
