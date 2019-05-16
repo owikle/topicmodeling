@@ -89,6 +89,7 @@ Don't be afraid to fail or get bad results. Topic modeling is exploratory, and s
 ## Fun with Text Generators
 
 Unsupervised deep learning neural network models?
+Can you collaborate with a machine algorithm?
 
 - [Sunspring](https://youtu.be/LY7x2Ihqjmc) (Oscar Sharp, Ross Goodwin, Thomas Middleditch, 2016)
 - Janelle Shane, [Darth Vader's recipe](https://twitter.com/JanelleCShane/status/1125963320823934976) ([aiweirdness blog](https://aiweirdness.com/))
