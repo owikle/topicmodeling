@@ -12,6 +12,7 @@ Supervised learning tasks typically involve feeding the algorithm a labeled trai
 Unsupervised learning tasks involve feeding unlabeled data to an algorithm that can identify patterns and clustering in the grouping. 
 
 The ability to learn from data is changing the approach to many computational tasks, such as OCR or NLP, putting the focus on curating training data sets rather than developing new software (see Andrej Karpathy, [Software 2.0](https://medium.com/@karpathy/software-2-0-a64152b37c35), 2017).
+However, computational techniques can also challenge our expertise in DH, stretching even stats experts ability to evaluate the validity of complex models (for fun, [spurious correlations](http://www.tylervigen.com/spurious-correlations){:target="blank"}).
 
 ## Natural Language Processing (NLP)
 
