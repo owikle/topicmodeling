@@ -7,14 +7,13 @@ nav: true
 
 Utilizing text as data requires breaking down a text into smaller units of analysis. Doing so allows us to see patterns and approach text from different points of entry.
 
-In text analysis (also referred to as text mining), units of analysis tend to be groupings of text (broken up as discrete books, documents, poems, etc.), and words. Much of the time spent doing text analysis research is spent preparing text so that these smaller units of analyses can be accessed by the digital tools we use.
+In text analysis (also referred to as text mining), units of analysis tend to be groupings of text (broken up as discrete books, documents, poems, etc.), and words. Much of the time spent doing text analysis research is spent preparing text data so that these smaller units of analyses can be accessed by the digital tools we use.
 
 -----------------
 
-## Selecting and getting to know a corpus
+## Where to Find Texts
 
-**Where to find texts**
-- Depending on what you're going to do with your texts, you'll need to pay attention to whether or not they are in public domain. Texts that are no longer under copyright are usually easier to use for analytical research because they have a greater likelihood of already being digitized. (Of course, this also has the effect of skewing text research in DH so that it focuses more on older literary works.) A good resource to use if you're wondering whether something is under copyright is Cornell University Library's [Copyright Information Center](https://copyright.cornell.edu/publicdomain). Currently, most works published before 1924 are in the public domain.
+Depending on what you're going to do with your texts, you'll need to pay attention to whether or not they are in public domain. Texts that are no longer under copyright are usually easier to use for analytical research because they have a greater likelihood of already being digitized. (Of course, this also has the effect of skewing text research in DH so that it focuses more on older literary works.) A good resource to use if you're wondering whether something is under copyright is Cornell University Library's [Copyright Information Center](https://copyright.cornell.edu/publicdomain). Currently, most works published before 1924 are in the public domain.
 
 - [Project Gutenberg](https://www.gutenberg.org/)
     - Full text of thousands of free books. Text is usually fairly clean, but often little bibliographic information.
@@ -33,8 +32,9 @@ In text analysis (also referred to as text mining), units of analysis tend to be
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
-**Getting to know your corpus**
-- Text analysis allows us to look at the big picture, usually enabling us to explore broad patterns that span large bodies of text. However, this doesn't absolve you from actually having to read some of the text you are analyzing. In order to understand the outputs from the algorithms you run on your text, and to be sure that the results you are getting are actually valid, you need to be somewhat familiar with the text you are analyzing.
+## Getting to Know Your Corpus
+
+Text analysis allows us to look at the big picture, usually enabling us to explore broad patterns that span large bodies of text. However, this doesn't absolve you from actually having to read some of the text you are analyzing. In order to understand the outputs from the algorithms you run on your text, and to be sure that the results you are getting are actually valid, you need to be somewhat familiar with the text you are analyzing.
 
 -----------------
 
@@ -60,20 +60,19 @@ Below you'll find definitions and examples of [file type](#file-type), [OCR](#oc
 
 ### File Type
 
-{% capture text %}
-Two types of computer files: **Text** and **Binary**
+Generally, there is a distinction between two broad types of computer files: **text** or **binary**.
 
-- **Text Files** contain bytes that represent text characters organized in lines (e.g. `a`, `B`, space, tab, line breaks, etc.). It can be opened with a text editor to see the characters.
-- **Binary Files** contain bytes that are NOT text characters. It will require software (other than a text editor) that can correctly interpret the bytes. For example, a JPG image, MP3 sound file, or a ZIP compressed folder.
+- **Text Files** contain only bytes that represent text characters organized in lines (e.g. `a`, `B`, space, tab, line breaks, etc.). They can be opened with a text editor to see the characters. For example, TXT, CSV, HTML, or MD files.
+- **Binary Files** contain bytes that are NOT text characters. They will require software (other than a text editor) that can correctly interpret the bytes. For example, a JPG image, MP3 sound file, or a ZIP compressed folder.
 
-(adapted from Evan Williamson's [File Type Notes](https://evanwill.github.io/_drafts/notes/file-types.html){:target='_blank'})
-{% endcapture %}
-{% include card.md text=text header="Text and Binary Files" %}
 
-Plain text files are text files, i.e. contain only characters like `a`, `1`, `<`, `!`, etc. 
-Some characters might be "hidden" control characters, such as tabs and line breaks. 
+(*adapted from Evan Williamson's [File Types Notes](https://evanwill.github.io/_drafts/notes/file-types.html){:target='_blank'}*)
 
-There are tools that make the process of transferring your text to plain text easier. If you are starting with images or pdfs, optical character recognition (OCR) is a good place to begin.
+"Plain text" files are text files, i.e. contain only characters like `a`, `1`, `<`, `!`, etc. 
+Some characters might be hidden control characters, such as tabs and line breaks. 
+
+Having text in this simple format enables it to be manipulated as data.
+However, most textual content is locked in the printed page, so the first step is to extract the information from digitized images.
 
 ### OCR (Optical Character Recognition)
 
@@ -96,7 +95,7 @@ OCR identifies printed or handwritten text characters in digital images of physi
 
 ### Text Cleaning
 
-After you've OCRd your text and transferred it to plain text format, you will likely discover errors in your new text file(s). OCR is not perfect. Especially if you are using older texts, you might encounter problems such as your s's looking like f's:
+After you've OCRed your text and transferred it to plain text format, you will likely discover errors in your new text file(s). OCR is not perfect. Especially if you are using older texts, you might encounter problems such as your s's looking like f's:
 
 {% include figure.html img="italian.jpg" alt="italian" caption="The Italian, Ann Radcliffe (1797)" width="75%" %}
 
