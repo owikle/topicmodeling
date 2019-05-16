@@ -74,7 +74,9 @@ Don't be afraid to fail or get bad results. Topic modeling is exploratory, and s
 
 **Google Books [Ngram Viewer](https://books.google.com/ngrams){:target='_blank'}**
 
-<div class="pb-3" style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/what_we_learned_from_5_million_books" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+<div class="p-3">
+<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/what_we_learned_from_5_million_books" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div>
+</div>
 
 -----------------
 
