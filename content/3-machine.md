@@ -68,7 +68,7 @@ Topic modeling is an example of **unsupervised machine learning**
         - One document per line, with each document consisting of `[doc ID] [tab] [label] [tab] [text...]`
         - If you need to get rid of line breaks in your text, try the following regex:
             - Find `([\n\r])+`
-            - Replace ` ` (a space)
+            - Replace a space
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
