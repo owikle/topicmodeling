@@ -91,7 +91,7 @@ Don't be afraid to fail or get bad results. Topic modeling is exploratory, and s
 Unsupervised deep learning neural network models?
 
 - [Sunspring](https://youtu.be/LY7x2Ihqjmc) (Oscar Sharp, Ross Goodwin, Thomas Middleditch, 2016)
-- Janelle Shane, [Darth Vader's recipe](https://twitter.com/JanelleCShane/status/1125963320823934976)
+- Janelle Shane, [Darth Vader's recipe](https://twitter.com/JanelleCShane/status/1125963320823934976) ([aiweirdness blog](https://aiweirdness.com/))
 - [Train a GPT-2 Text-Generating Model w/ GPU For Free](https://colab.research.google.com/drive/1VLG8e7YSEwypxU-noRNhsv5dW4NfTGce), google colab
 - [GPT-2 code](https://github.com/openai/gpt-2), recent press [1](https://openai.com/blog/better-language-models/) [2](https://towardsdatascience.com/openais-gpt-2-the-model-the-hype-and-the-controversy-1109f4bfd5e8), [3](https://www.vox.com/2019/5/15/18623134/openai-language-ai-gpt2-poetry-try-it), etc...
 - [Talk to Transformer](https://talktotransformer.com/) (ask it a question, like `Q: What is Digital Humanities?`)
