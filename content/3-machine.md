@@ -43,8 +43,13 @@ Topic modeling is an example of **unsupervised machine learning**
 {% capture text %}
 **Topic Modeling Activity** 
 - Topic modeling in-browser with [jsLDA](https://mimno.infosci.cornell.edu/jsLDA/)
-    - Explore this sample corpus of <a href="../data/austen_all.txt">Jane Austen texts</a>, or try it with your own corpus
-    - Here's a <a href="../data/austen_stopwords.txt">sample stopword list</a> you can use
+    - Explore a sample corpus of <a href="../data/austen.zip">Jane Austen texts</a>
+        - Click on the link above, unzip the downloaded file. Inside you'll find a text file of Austen's corpus, along with a stopword list. Upload both of these files to jsLDA. 
+    - You can also try it with your own corpus. Just make sure your text file is formated correctly:
+        - One document per line, with each document consisting of `[doc ID] [tab] [label] [tab] [text...]`
+        - If you need to get rid of line breaks in your text, try the following regex:
+            - Find `(\h*\R)+`
+            - Replace `\x20`
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
