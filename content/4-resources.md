@@ -8,10 +8,19 @@ nav: true
 - [RegExr](https://regexr.com/), an online tool to learn, build, and test Regular Expressions
 - [Regex lessons](https://regexone.com/)
 - [Regex cheat sheet](https://www.rexegg.com/regex-quickstart.html)
+- Ted Underwood, [DataMunging](https://github.com/tedunderwood/DataMunging), example of Python scripts used to clean and normalize OCR
 
 ## Concordancing and Text Analysis
 
 - [Antconc](https://www.laurenceanthony.net/software/antconc/): an open-source tool for word concordance and text analysis. This software is an easy download with robust documentation and more reliable performance than Voyant.
+
+## NLP
+
+- [Stanford NLP Group](https://nlp.stanford.edu/software/)
+- Python [NLTK](http://www.nltk.org/), learn via the [NLTK Book](http://www.nltk.org/book/) (Steven Bird, Ewan Klein, and Edward Loperm, designed to teach text analysis)
+- [R](https://cran.rstudio.com/), learn via [Text analysis with R for students of literature](http://www.matthewjockers.net/text-analysis-with-r-for-students-of-literature/), Matthew L Jockers (New York : Springer-Verlag, 2014).
+- [Open Calais](http://www.opencalais.com/) (API trained on web and newspaper text)
+- Watson [Natural Language Understanding](https://www.ibm.com/watson/developercloud/natural-language-understanding.html) (API trained on web content)
 
 ## Topic Modeling
 
@@ -20,3 +29,4 @@ nav: true
 - Scott Weingart, [Topic Modeling for Humanists: A Guided Tour](http://www.scottbot.net/HIAL/index.html@p=19113.html)
 - [Mallet](http://mallet.cs.umass.edu/) (Developed by David Mimno)
     - [Programming Historian Guide to Mallet](https://programminghistorian.org/en/lessons/topic-modeling-and-mallet)
+- [Overview Docs](https://www.overviewdocs.com/), online tool designed for journalists to sort through huge data sets
