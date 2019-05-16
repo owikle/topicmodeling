@@ -41,7 +41,7 @@ Demos:
     - **Input**: texts 
     - **Output**: several lists of words that appear in the texts
 - Groups words across the corpus into clusters of words, or "topics" based on those words' similarity and dissimilarity
-- In a good topic model, the words in a topic make sense (for example: "navy, ship, captain" and "tobacco, farm, crops")
+- Sometimes topics are easy to identify (for example: "navy, ship, captain"). Other times they're more ambiguous.
 - Usually works best on large bodies of text
 - Some familiarity with your text is important
     - See ["When you have a MALLET, everything looks like a nail"](http://sappingattention.blogspot.com/2012/11/when-you-have-mallet-everything-looks.html) for an example of what can happen when you're not familiar with your data or the tools you're using
