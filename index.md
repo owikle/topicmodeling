@@ -11,6 +11,10 @@ layout: default
 {:.text-center}
 *An overview of digital humanities tools and methods that are used to explore and analyze text.*
 
+{:.text-center .pt-3}
+<h5><a href="mailto:omwikle@uidaho.edu">Olivia Wikle</a>, Digital Initiatives Librarian</h5>
+{:.pb-4}
+
 {% include toc.html %}
 
 Hosted by [University of Idaho Library](http://www.lib.uidaho.edu/), {{ site.pub_year }}.
