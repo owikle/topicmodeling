@@ -28,32 +28,27 @@ Topic modeling is an example of **unsupervised machine learning**
 {:.pb-3}
 
 {% capture terms %}
-- **Text Mining**: A general term encompassing several different types of automated discovery from a corpus of texts.  In common use, "text mining" often refers to topic modeling. 
+- **Text Mining**: A general term encompassing several different types of automated discovery using a body of texts. Topic modeling is a type of text mining.
 
-- **Corpus**:  A collection of documents.  Selection and cleaning of corpora can be the most time- and labor-intensive aspects of topic modeling, and topic modeling outcomes directly depend on the quality and volume of data in the corpus. A very small corpus is unlikely to yield many useful or specific topics; larger corpora (250,000+ words) usually generate better results.  This is because topic modeling is essentially a machine learning process: the more training data the modeling program has, the more refined its topics become over time. 
+- **Document**: A discrete unit of text. This can be a blog post, a book chapter, a book, a journal article, a diary entry, etc. For topic modeling, you determine what a document is depending on the nature of the corpus or the kind of data you hope to surface. 
 
-- **Document**:  A discrete logical unit of text.  For topic modeling, documents can vary in length depending on the nature of the corpus or the kind of data you hope to surface.  Because topics arise from documents, it is wise to think carefully about how to segment your data.  For example, if you have 25,000 emails, do you treat each one as a document?  All emails by a given author as a single document?  The choices you make at this stage will directly affect your outcomes.
-    - It’s worth noting that a “document” is defined somewhat flexibly. For example, we can call every paragraph in a book its own “document,” and run LDA over the individual paragraphs. The more often words are used together within a document, the more related they are to one another.
+    - Because topics arise from documents, it is wise to think carefully about how to segment your data: For example, if your text is 25,000 emails, do you treat each one as a document?  All emails by a given author as a single document?  The choices you make at this stage will directly affect your outcomes.
 
-- **Topic**: A group of words that have a high likelihood of clustering together.  ("High" is relative, of course; we might also say "any likelihood," depending on the number of topics and the size of the corpus.)  For the purposes of topic modeling, topics are a probability distribution over words. 
+{:.pt-2}
+- **Corpus**: A collection of documents ("body of text"). 
+
+- **Topic**: (Discourse/theme): A group of words that have a high likelihood of clustering together.
 {% endcapture %}
 {% include card.md text=terms header="Terms to Know" %}
 
-#### Basics of Topic Modeling
+{:.pt-3}
+#### Basics of Topic Modeling:
 
 - Text mining that allows the user to identify patterns in a corpus of texts
-    - **Input**: texts 
-    - **Output**: several lists of words that appear in the texts
+    - **Input**: text documents 
+    - **Output**: several clusters of words that appear in the documents
 - Groups words across the corpus into clusters of words, or "topics" based on those words' similarity and dissimilarity
 - Sometimes topics are easy to identify (for example: "navy, ship, captain"). Other times they're more ambiguous.
-- Usually works best on large bodies of text
-- Some familiarity with your text is important
-    - See ["When you have a MALLET, everything looks like a nail"](http://sappingattention.blogspot.com/2012/11/when-you-have-mallet-everything-looks.html) for an example of what can happen when you're not familiar with your data or the tools you're using
-
----
-{:.pb-3}
-
-- **Topic Modeling**: A probabilistic technique for determining (and locating) words that are likely to cluster together as "topics" across a set of documents. It's a method of analyzing a collection of documents to infer what topics (aka discourses, or themes) might have generated them.
 
 ---
 {:.pb-3}

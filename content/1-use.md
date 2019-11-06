@@ -18,7 +18,14 @@ nav: true
     - The results may confirm your suspicions or yield surprising outputs that lead to further research
 - For gaining insight into a corpus of text that is too large to read
 
-{% include card.md title="When Does Topic Modeling Work Best?" text="- When interpreting large bodies of text" %}
+{% capture when %}
+Short answer: when interpreting large bodies of text
+
+A very small corpus is unlikely to yield many useful or specific topics; larger corpora usually generate better results.  This is because topic modeling is a machine learning process: the more training data the modeling program has, the more refined its topics become over time. 
+
+However, just because you *can* use topic modeling doesn't necessarily mean you should. If you're thinking seriously about whether it's useful for your project, check out Matthew Kirschenbaum’s [The Remaking of Reading: Data Mining and the Digital Humanities](https://www.csee.umbc.edu/~hillol/NGDM07/abstracts/talks/MKirschenbaum.pdf) and Stephen Ramsay’s book, [Reading Machines](https://www.press.uillinois.edu/books/catalog/75tms2pw9780252036415.html).
+{% endcapture %}
+{% include card.md title="When Does Topic Modeling Work Best?" text=when %}
 
 ---
 {:.pb-3 #data}
@@ -66,11 +73,14 @@ As a type of 'distant reading,' topic modeling allows us to look at the big pict
 However, **this doesn't absolve you from actually having to read some of the text you are modeling**:
 In order to understand the outputs from the algorithms you run on your text (and to be sure that the results you are getting are actually valid), you need to be somewhat familiar with the text you are modeling.
 
+- See ["When you have a MALLET, everything looks like a nail"](http://sappingattention.blogspot.com/2012/11/when-you-have-mallet-everything-looks.html) for an example of what can happen when you're not familiar with your data or the tools you're using
+
 {:.pt-3}
 #### Preparing Your Texts (cleaning, formatting, separating)
 {:.pb-2}
 
-You'll want to make sure your documents' text is clean enough to make sense when you see the topics that are produced. See this site's [Resources](/resources) page for text cleaning techniques and tools.
+Selection and cleaning of corpora can be the most time- and labor-intensive aspects of topic modeling, and topic modeling outcomes depend on the quality and volume of data in the corpus: 
+You'll want to make sure your documents' text is clean enough that you can interpret the topics that are produced. See this site's [Resources](/resources) page for text cleaning techniques and tools.
 
 Decide what you want your "document" to be (paragraph, chapter, letter, book, etc.), and split up your text accordingly.
 

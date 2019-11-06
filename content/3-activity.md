@@ -3,33 +3,34 @@ title: Activity
 nav: true
 ---
 
-{% capture text %}
-**Topic Modeling Activity** 
-- Topic modeling in-browser with [jsLDA](https://mimno.infosci.cornell.edu/jsLDA/)
-    - Explore a sample corpus of <a href="../data/austen.zip">Jane Austen texts</a>
-        - Click on the link above, unzip the downloaded file. Inside you'll find a text file of Austen's corpus, along with a stopword list. Upload both of these files to jsLDA. 
-    - You can also try it with your own corpus. Just make sure your text file is formated correctly:
-        - One document per line, with each document consisting of `[doc ID] [tab] [label] [tab] [text...]`
-        - If you need to get rid of line breaks in your text, try the following regex:
-            - Find `([\n\r])+`
-            - Replace a space
-{% endcapture %}
-{% include alert.md text=text color=secondary %}
+# Topic Modeling Activity
 
+{:.pt-4}
+Topic modeling in-browser with [jsLDA](https://mimno.infosci.cornell.edu/jsLDA/){:target='_blank'}
+
+Time to experiment! Download these texts and upload them to jsLDA:
+- [Frankenstein; Or, The Modern Prometheus](../data/frankenstein.txt.zip) by Mary Wollstonecraft Shelley (Retrieved from [Project Gutenberg](https://www.gutenberg.org/ebooks/84) and formatted for jsLDA)
+- [U.S. Presidents' Inaugural Speeches](../data/presidents.txt.zip) (Retrieved from [DH Toychest](http://dhresourcesforprojectbuilding.pbworks.com/w/page/69244469/Data%20Collections%20and%20Datasets) and formatted for jsLDA: all 57 inaugural speeches from Washington through Obama collected from the American Presidency Project with the assistance of project co-director John T. Woolley; assembled as individual plain-text files by Alan Liu)
+- [Lyrical Ballads, 1798](../data/wordsworth.txt.zip) by William Wordsworth with Samuel Taylor Coleridge (Retrieved from [DH Toychest](http://dhresourcesforprojectbuilding.pbworks.com/w/page/69244469/Data%20Collections%20and%20Datasets) and formatted for jsLDA; assembled by Alan Liu from Project Gutenberg)
+
+Add a stopword list: [NLTK's list of english stopwords](https://gist.github.com/sebleier/554280) (you can also download this same list as a text file here: [stopwords](/data/stopwords.txt.zip))
+
+
+You can also try it with your own corpus. Just make sure your text file is formated correctly:
+- One document per line, with each document consisting of `[doc ID] [tab] [label] [tab] [text...]`
+
+{:.card .card-body .card-text}
 Don't be afraid to fail or get bad results. Topic modeling is exploratory, and sometimes you have to play around with it before you know what settings work best for your project.
 
+---
+{:.pb-3}
 
 {% capture text %}
 **Reflection Time** 
-- What insights, if any, do these tools provide?
-- Are there patterns or in/consistencies?
-    - Do you trust these patterns? Could you verify their accuracy somehow?
-- How might your 'read' groups of words?
-- What keywords or patterns did you pursue and why?
+- What insights, if any, does topic modeling provide?
 - What are the values/limitations of 'not reading' this way?
+- How might the judgment calls you have to make (choosing stopwords, number of topics produced, scope of collection) affect your use of your results as evidence?
 {% endcapture %}
 {% include alert.md text=text color=secondary %}
 
-LDA and its relatives are valuable exploratory methods, but I’m not sure how much value they will have as evidence.
-For one thing, they require you to make a series of judgment calls that deeply shape the results you get (from choosing stopwords, to the number of topics produced, to the scope of the collection).
-The resulting model ends up being tailored in difficult-to-explain ways by a researcher’s preferences.
+{:.pb-3}
