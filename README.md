@@ -1,5 +1,5 @@
-# text-as-data
+# topic modeling
 
-https://owikle.github.io/text-as-data/
+https://owikle.github.io/topicmodeling/
 
-workshop for DH Symposium 2019
+workshop for UIdaho Library, November 6, 2019

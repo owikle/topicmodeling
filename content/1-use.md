@@ -36,7 +36,7 @@ However, just because you *can* use topic modeling doesn't necessarily mean you 
 Before you start topic modeling, you'll need to make sure you have the right type of data in the correct formats.
 
 {:.pt-3}
-#### Text as a "Bag of Words":
+#### Plain Text For Input:
 {:.pb-2}
 
 {% capture text %}
@@ -69,19 +69,19 @@ Having text in this simple format enables it to be manipulated as data.
 #### Getting to Know Your Corpus
 {:.pb-2}
 
-As a type of 'distant reading,' topic modeling allows us to look at the big picture, enabling us to explore broad patterns that span large bodies of text.
+As a type of "distant reading," topic modeling allows us to look at the big picture, enabling us to explore broad patterns that span large bodies of text.
 
 However, **this doesn't absolve you from actually having to read some of the text you are modeling**:
 In order to understand the outputs from the algorithms you run on your text (and to be sure that the results you are getting are actually valid), you need to be somewhat familiar with the text you are modeling.
 
-- See ["When you have a MALLET, everything looks like a nail"](http://sappingattention.blogspot.com/2012/11/when-you-have-mallet-everything-looks.html) for an example of what can happen when you're not familiar with your data or the tools you're using
+- See Ben Schmidt, ["When you have a MALLET, everything looks like a nail"](http://sappingattention.blogspot.com/2012/11/when-you-have-mallet-everything-looks.html) for an example of what can happen when you're not familiar with your data or the tools you're using
 
 {:.pt-3}
 #### Preparing Your Texts (cleaning, formatting, separating)
 {:.pb-2}
 
 Selection and cleaning of corpora can be the most time- and labor-intensive aspects of topic modeling, and topic modeling outcomes depend on the quality and volume of data in the corpus: 
-You'll want to make sure your documents' text is clean enough that you can interpret the topics that are produced. See this site's [Resources](/resources) page for text cleaning techniques and tools.
+- You'll want to make sure your documents' text is clean enough that you can interpret the topics that are produced. See this site's [Resources](/topicmodeling/content/4-resources.html) page for text cleaning techniques and tools.
 
 Decide what you want your "document" to be (paragraph, chapter, letter, book, etc.), and split up your text accordingly.
 
@@ -119,6 +119,7 @@ Make graphs using Excel or [Tableau](https://www.tableau.com/){:target='_blank'}
 
 - Robert Nelson, [Mining the Dispatch](http://dsl.richmond.edu/dispatch/pages/intro){:target='_blank'}
 - Cameron Blevins, [Topic Modeling Martha Ballard's Diary](http://www.cameronblevins.org/posts/topic-modeling-martha-ballards-diary/){:target='_blank'}
+- "'The Spider's Web': An Analysis of Fan Mail from *Amazing Spider-Man*, 1963-1995", by John A. Walsh, Shawn Martin, and Jennifer St. Germain, published in [Empirical Comics Research: Digital, Multimodal, and Cognitive Methods](https://www.taylorfrancis.com/books/e/9781315185354)
 - [Journal of Digital Humanities 2.1 (winter 2012)](http://journalofdigitalhumanities.org/2-1/){:target='_blank'}
 
 ---

@@ -31,14 +31,14 @@ Topic modeling is an example of **unsupervised machine learning**
 - **Text Mining**: A general term encompassing several different types of automated discovery using a body of texts. 
 Topic modeling is a type of text mining.
 
-- **Document**: A discrete unit of text. This can be a blog post, a book chapter, a book, a journal article, a diary entry, etc. For topic modeling, you determine what a document is depending on the nature of the corpus or the kind of data you hope to surface. 
+- **Topic**: (Discourse/theme): A group of words that have a high likelihood of clustering together.
 
-    - Because topics arise from documents, it is wise to think carefully about how to segment your data: For example, if your text is 25,000 emails, do you treat each one as a document?  All emails by a given author as a single document?  The choices you make at this stage will directly affect your outcomes.
+- **Document**: A discrete unit of text. This can be a blog post, a book chapter, a book, a journal article, a diary entry, etc. For topic modeling, you determine what a document is depending on the nature of the corpus or the kind of results you're looking for. 
+
+    - Because topics arise from documents, it is wise to think carefully about how to segment your data: For example, if your text is 25,000 emails, do you treat each one as a document?  All emails by a specific author as a single document?  The choices you make at this stage will directly affect your outcomes and the way you interpret them.
 
 {:.pt-2}
 - **Corpus**: A collection of documents ("body of text"). 
-
-- **Topic**: (Discourse/theme): A group of words that have a high likelihood of clustering together.
 {% endcapture %}
 {% include card.md text=terms header="Terms to Know" %}
 

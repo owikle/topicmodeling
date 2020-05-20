@@ -22,11 +22,11 @@ Here, we'll discuss a program called [MALLET](http://mallet.cs.umass.edu/){:targ
 ##### Under the Hood: Latent Dirichlet Allocation
 {:.pb-2}
 
-MALLET uses an algorithm called [Latent Dirichlet Allocation](http://jmlr.csail.mit.edu/papers/v3/blei03a.html){:target=_'blank'} (LDA) that works in this way:
+MALLET uses an algorithm called [Latent Dirichlet Allocation](http://jmlr.csail.mit.edu/papers/v3/blei03a.html){:target='_blank'} (LDA) that works in this way:
 
 - Begin by gathering a set of documents you want to model
 
-- Assign the algorithm the number of topics (X) you want it to produce, and the number of times (Z) you want it to run on your documents
+- Assign the algorithm the number of topics (X) you want it to produce, and the number of iterations (Z) you want it to run on your documents
 
 - The model then goes through each of your documents and randomly assigns each word to one of X topics
 
@@ -71,7 +71,7 @@ Usually, stopword lists contain common words such as a, an, the, and, to, from, 
     Stopword lists are customizable, allowing the researcher to remove words such as character or place names from the analysis. 
 
 {:.pt-2}
-- **Parameters**: Change some aspects of how to the MALLET program is running (number of iterations, topics, and other more complex parameters) to achieve a different output (see [MALLET Documentation](http://mallet.cs.umass.edu/topics.php){:target='_blank'} for more details)
+- **Parameters**: Change some aspects of how the MALLET program is running (number of iterations, topics, and other more complex parameters) to achieve a different output (see [MALLET Documentation](http://mallet.cs.umass.edu/topics.php){:target='_blank'} for more details)
 
 ---
 {:.pb-3}
