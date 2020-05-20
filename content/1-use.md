@@ -21,7 +21,8 @@ nav: true
 {% capture when %}
 Short answer: when interpreting large bodies of text
 
-A very small corpus is unlikely to yield many useful or specific topics; larger corpora usually generate better results.  This is because topic modeling is a machine learning process: the more training data the modeling program has, the more refined its topics become over time. 
+A very small corpus is unlikely to yield many useful or specific topics; larger corpora usually generate better results.
+This is because topic modeling is a machine learning process: the more training data the modeling program has, the more refined its topics become over time. 
 
 However, just because you *can* use topic modeling doesn't necessarily mean you should. If you're thinking seriously about whether it's useful for your project, check out Matthew Kirschenbaum’s [The Remaking of Reading: Data Mining and the Digital Humanities](https://www.csee.umbc.edu/~hillol/NGDM07/abstracts/talks/MKirschenbaum.pdf) and Stephen Ramsay’s book, [Reading Machines](https://www.press.uillinois.edu/books/catalog/75tms2pw9780252036415.html).
 {% endcapture %}

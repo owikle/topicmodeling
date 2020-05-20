@@ -6,7 +6,8 @@ nav: true
 # Tools
 
 {:.pt-4}
-There are various tools that can be used to employ topic modeling, including Python and R. Here, we'll discuss a program called [MALLET](http://mallet.cs.umass.edu/){:target='_blank'} and the statistical model it uses.
+There are various tools that can be used to employ topic modeling, including Python and R. 
+Here, we'll discuss a program called [MALLET](http://mallet.cs.umass.edu/){:target='_blank'} and the statistical model it uses.
 
 ---
 {:.pb-3}
@@ -33,7 +34,7 @@ MALLET uses an algorithm called [Latent Dirichlet Allocation](http://jmlr.csail.
 
 - But luckily you've assigned the model to iterate Z times! (This is the important part...)
 
-- The model runs Z times, each time assessing the probability that Word A appears in each topic, and the probability that Topic B appears in each document
+- The model runs Z times, each time assessing the probability that Word A appears in each *topic*, and the probability that Topic B appears in each *document*
 
 - After so many iterations, the model gets pretty good at clustering words that are likely to appear in similar contexts across all the documents in your corpus
 
@@ -63,9 +64,11 @@ MALLET uses an algorithm called [Latent Dirichlet Allocation](http://jmlr.csail.
 
 ## Modifying Your Output
 
-- **Stopword List**: A stopword is a word (usually a commonly-used word) that an application has been programmed to ignore. Usually, stopword lists contain common words such as a, an, the, and, to, from, etc. 
+- **Stopword List**: A stopword is a word (usually a commonly-used word) that an application has been programmed to ignore. 
+Usually, stopword lists contain common words such as a, an, the, and, to, from, etc. 
 
-    - Sometimes, it can be useful to add common words like person names or place names, depending on what your research question is. Stopword lists are customizable, allowing the researcher to remove words such as character or place names from the analysis. 
+    - Sometimes, it can be useful to add common words like person names or place names, depending on what your research question is. 
+    Stopword lists are customizable, allowing the researcher to remove words such as character or place names from the analysis. 
 
 {:.pt-2}
 - **Parameters**: Change some aspects of how to the MALLET program is running (number of iterations, topics, and other more complex parameters) to achieve a different output (see [MALLET Documentation](http://mallet.cs.umass.edu/topics.php){:target='_blank'} for more details)

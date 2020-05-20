@@ -28,7 +28,8 @@ Topic modeling is an example of **unsupervised machine learning**
 {:.pb-3}
 
 {% capture terms %}
-- **Text Mining**: A general term encompassing several different types of automated discovery using a body of texts. Topic modeling is a type of text mining.
+- **Text Mining**: A general term encompassing several different types of automated discovery using a body of texts. 
+Topic modeling is a type of text mining.
 
 - **Document**: A discrete unit of text. This can be a blog post, a book chapter, a book, a journal article, a diary entry, etc. For topic modeling, you determine what a document is depending on the nature of the corpus or the kind of data you hope to surface. 
 
