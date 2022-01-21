@@ -34,7 +34,7 @@ MALLET uses an algorithm called [Latent Dirichlet Allocation](http://jmlr.csail.
 
 - But luckily you've assigned the model to iterate Z times! (This is the important part...)
 
-- The model runs Z times, each time assessing the probability that Word A appears in each *topic*, and the probability that Topic B appears in each *document*
+- The model runs Z times, each time assessing the probability that *Word A* appears in each *topic*, and the probability that *Topic A* appears in each *document*
 
 - After so many iterations, the model gets pretty good at clustering words that are likely to appear in similar contexts across all the documents in your corpus
 
